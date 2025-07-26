@@ -1,0 +1,40 @@
+*{
+  font-family: 'Inter';
+}
+
+.menu-open{
+  display: none;
+}
+nav{
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+@media (max-width: 820px) {
+.menu-open{
+  display: unset;
+  z-index: 10;
+}
+  nav{
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 30px;
+    top: 38px;
+    padding: 15px;
+    background-color: #fefefe;
+    border-radius: 15px;
+    border: 1px #818181 solid;
+  }
+input{
+  margin: 8px 0;
+  margin-left: 0 !important;
+}
+}
